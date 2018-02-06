@@ -295,6 +295,7 @@ Notifications.setApplicationIconBadgeNumber = function() {
 	return this.callNative('setApplicationIconBadgeNumber', arguments);
 };
 
+Notifications.getApplicationIconBadgeNumber = function() {
 	return this.callNative('getApplicationIconBadgeNumber', arguments);
 };
 
