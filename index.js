@@ -164,6 +164,7 @@ Notifications.localNotificationSchedule = function(details: Object) {
 		const iosDetails = {
 			fireDate: details.date.toISOString(),
 			alertBody: details.message,
+			alertTitle: details.title,
 			soundName: soundName,
 			userInfo: details.userInfo,
 			repeatInterval: details.repeatType
@@ -294,7 +295,6 @@ Notifications.setApplicationIconBadgeNumber = function() {
 	return this.callNative('setApplicationIconBadgeNumber', arguments);
 };
 
-Notifications.getApplicationIconBadgeNumber = function() {
 	return this.callNative('getApplicationIconBadgeNumber', arguments);
 };
 
